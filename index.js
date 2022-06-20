@@ -29,7 +29,7 @@ bot.on("message", async (e) => {
   let b = await Book.findOne({ ISBN: e.message.text }); //test
   console.log(b);
   bot.push(
-    "Ua1f9a2bb1d951e2e78a03a9e0b7d5993",
+    "",
     "妳已經買過這本書了 書名：" + b.name
   );
   //   console.log(e);
