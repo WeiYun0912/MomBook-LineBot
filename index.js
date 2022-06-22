@@ -28,10 +28,7 @@ connection.once("open", () => {
 bot.on("message", async (e) => {
   let b = await Book.findOne({ ISBN: e.message.text }); //test
   console.log(b);
-  bot.push(
-    "",
-    "妳已經買過這本書了 書名：" + b.name
-  );
+  bot.push();
   //   console.log(e);
 });
 
